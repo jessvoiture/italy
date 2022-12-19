@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Quicksand:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    cursor: url('html_images/circle.png'),auto;
+}
+
+.section, .section-day {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    color: yellow;
+    margin: 0 auto
+}
+
+#intro {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#intro > .overlay {
+    margin-bottom: 20%;
+    display: block;
+}
+
+.title {
+    font-family: 'Carattere', cursive;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 20vw;
+}
+
+.subtitle {
+    font-size: 1.4vw;
+}
+
+ul {
+    font-size: 12pt;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    list-style: none;
+    padding: 0
+}
+
+.section-day {
+    align-items: end;
+    margin-top: 10%;
+}
+
+.section-day .overlay {
+    text-align: center;
+    width: 96%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail, .subtitle {
+    font-family: 'Quicksand', sans-serif;
+    color: yellow;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.detail {
+    font-size: 2.4vh;
+}
+
+.outro{
+    background-color: #ededed;
+    padding: 5% 0 5% 0;
+    text-align: center;
+}
+
+.outro-text {
+    display: inline-block;
+    text-align: left;
+    font-size: 9pt;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(10%, auto);
+}
+
+.grid > div img {
+    width: 100%;
+	height: auto;
+	overflow:hidden;
+	display:block
+  }
+
+#dates-list {
+    text-align: right;
+    grid-column: 9 / 11;
+    grid-row: 1
+}
+
+#places-list {
+    grid-column: 11 / 16;
+    grid-row: 1
+}
+
+#suisi-1 {
+    grid-column: 2 / 9;
+    grid-row: 1 / 6;
+}
+
+#suisi-2 {
+    grid-column: 9 / 16;
+    grid-row: 1 / 6;
+}
